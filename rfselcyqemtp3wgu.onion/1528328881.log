@@ -1,0 +1,7 @@
+* About to connect() to proxy 127.0.0.1 port 9050 (#0)
+*   Trying 127.0.0.1...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Can't complete SOCKS5 connection to 0.0.0.0:0. (4)
+* Closing connection 0
+curl: (7) Can't complete SOCKS5 connection to 0.0.0.0:0. (4)

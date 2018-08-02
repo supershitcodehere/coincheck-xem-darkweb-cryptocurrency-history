@@ -1,0 +1,102 @@
+* About to connect() to proxy 127.0.0.1 port 9050 (#0)
+*   Trying 127.0.0.1...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Connected to 127.0.0.1 (127.0.0.1) port 9050 (#0)
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0> GET / HTTP/1.1
+> Host: rfselcyqemtp3wgu.onion
+> Accept: */*
+> User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0
+> 
+  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0< HTTP/1.1 200 OK
+< Server: nginx
+< Date: Thu, 22 Mar 2018 05:52:40 GMT
+< Content-Type: text/html; charset=UTF-8
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< Set-Cookie: PHPSESSID=5ea4a1d2d6dbce0ae37e41e2dc4910fc; path=/
+< Expires: Thu, 19 Nov 1981 08:52:00 GMT
+< Cache-Control: no-store, no-cache, must-revalidate
+< Pragma: no-cache
+< 
+{ [data not shown]
+100  3099    0  3099    0     0   1101      0 --:--:--  0:00:02 --:--:--  1102
+* Connection #0 to host rfselcyqemtp3wgu.onion left intact
+<!doctype html>
+<html>
+    <head>
+        <title>Cryptocurrency exchange </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="/app/assets/css/bootstrap-reboot.css">
+        <link rel="stylesheet" href="/app/assets/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="/app/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/app/assets/css/style.css">
+    </head>
+    <body>
+        <div class="logo">The Cryptocurrency Exchange</div>
+        <div class="container-fluid">
+            <!-- Content -->
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-7 col-md-8 col-s-10 col-12">
+                    <div class="content-wrapper">
+                        <div class="alert-info">
+You can exchange your Bitcoin or Litecoin for XEM. This fully automatic Exchange allow you to buy XEM for BTC or LTC only after 1 confirmation.
+</div>
+<div class="alert-error">
+    <b>WARNING!!! LAST RESERVE!!!</b>
+</div>
+
+<form class="exchange" method="POST" action="/generateWallet">
+    <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-s-12">
+            <div class="title">I want to exchange:</div>
+            <label class="radio">
+                <input type="radio" name="txtype" value="btc" checked>
+                <img src="/app/assets/images/bitcoin.png"> BTC
+            </label>
+            <label class="radio">
+                <input type="radio" name="txtype" value="ltc">
+                <img src="/app/assets/images/litecoin.png"> LTC
+            </label>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-s-12">
+            <div class="title">To:</div>
+            <label class="radio">
+                <img src="/app/assets/images/xem.png"> XEM
+            </label>
+            <div class="small">Reserve: 983&comma;570 XEM</div>
+        </div>
+    </div>
+
+    <div class="title">Your NEM (XEM) address:</div>
+    <input type="text" name="outAddress" required>
+
+    <div class="row">
+        <div class="col">
+            <div class="title">Captcha:</div>
+            <input type="text" name="captcha" required>
+        </div>
+        <div class="col">
+            <img src="/captcha?r=431702975" style="margin-top: 65px;"/>        </div>
+    </div>
+    <button type="submit">Generate wallet</button>
+</form>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-7 col-md-8 col-s-10 col-12">
+                    <div class="footer">
+                        <div><a href="/tickets/create" style="font-size: 2em">Contact Us</a></div>
+                        <div style="font-size: 1.5em">
+                            1 BTC = 32&comma;488&period;757211 XEM |
+                            1 LTC = 612&period;412885 XEM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

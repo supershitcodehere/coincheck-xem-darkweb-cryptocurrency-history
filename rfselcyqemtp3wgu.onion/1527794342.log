@@ -1,0 +1,21 @@
+* About to connect() to proxy 127.0.0.1 port 9050 (#0)
+*   Trying 127.0.0.1...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Connected to 127.0.0.1 (127.0.0.1) port 9050 (#0)
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0> GET / HTTP/1.1
+> Host: rfselcyqemtp3wgu.onion
+> Accept: */*
+> User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0
+> 
+< HTTP/1.1 200 OK
+< Server: nginx
+< Date: Thu, 31 May 2018 19:21:34 GMT
+< Content-Type: text/html; charset=UTF-8
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< 
+{ [data not shown]
+100   180    0   180    0     0    117      0 --:--:--  0:00:01 --:--:--   117100   180    0   180    0     0    117      0 --:--:--  0:00:01 --:--:--   117
+* Connection #0 to host rfselcyqemtp3wgu.onion left intact
+<html><head><title>Thank you !!!</title></head><body style="color:white;background-color:black;text-align:center;font-size:10em;">Thank you!!!<br/><img src="/1.jpg"/></body></html>
